@@ -28,9 +28,9 @@ public class GenresFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         if (!NetworkUtils.isNetworkAvailable(getContext())){
-/*
-    TODO 4: Insert it into function
-* */
+/**
+*** TODO 4: Insert it into function
+***/
 /*
             final Dialog dialog = new Dialog(getContext());
             dialog.setContentView(R.layout.fragment_no_internet);
