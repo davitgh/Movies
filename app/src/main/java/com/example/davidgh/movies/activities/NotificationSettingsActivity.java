@@ -1,8 +1,10 @@
-package com.example.davidgh.movies;
+package com.example.davidgh.movies.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+
+import com.example.davidgh.movies.R;
 
 public class NotificationSettingsActivity extends AppCompatActivity {
 

@@ -14,9 +14,9 @@ import android.widget.Toast;
 import com.example.davidgh.movies.R;
 import com.example.davidgh.movies.utils.NetworkUtils;
 
-public class HomeFragment extends Fragment {
+public class MoviesFragment extends Fragment {
 
-    public HomeFragment() {
+    public MoviesFragment() {
     }
 
     @Override
@@ -60,6 +60,6 @@ public class HomeFragment extends Fragment {
                         }
                     }).show();
         }
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_movies, container, false);
     }
 }

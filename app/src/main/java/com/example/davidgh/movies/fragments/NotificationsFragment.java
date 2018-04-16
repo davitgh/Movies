@@ -8,9 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.example.davidgh.movies.NotificationSettingsActivity;
+import com.example.davidgh.movies.activities.NotificationSettingsActivity;
 import com.example.davidgh.movies.R;
 
 public class NotificationsFragment extends Fragment {
