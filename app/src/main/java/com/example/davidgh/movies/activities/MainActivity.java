@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         getMenuInflater().inflate(R.menu.main, menu);
 
-        /* TODO 5: Change color of Toolbar
+        /* TODO 3: Change color of Toolbar
         // change color for icon 0
             Drawable yourdrawable = menu.getItem(0).getIcon(); // change 0 with 1,2 ...
             yourdrawable.mutate();

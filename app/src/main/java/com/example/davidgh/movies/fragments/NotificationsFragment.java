@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.davidgh.movies.activities.NotificationSettingsActivity;
+import com.example.davidgh.movies.NotificationsSettingsActivity;
 import com.example.davidgh.movies.R;
 
 public class NotificationsFragment extends Fragment {
@@ -31,7 +31,7 @@ public class NotificationsFragment extends Fragment {
         btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent settingsIntent = new Intent(getContext(), NotificationSettingsActivity.class);
+                Intent settingsIntent = new Intent(getContext(), NotificationsSettingsActivity.class);
                 startActivity(settingsIntent);
             }
         });

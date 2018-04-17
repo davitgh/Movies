@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fragagment Home"/>
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- TODO 5: Important link: Icon Link https://icons8.com/icon/set/instagram/all-->
+            <include layout="@layout/layout_header" />
+
+            <!--TODO 6: here should be 3 news -->
+            <include layout="@layout/layout_news" />
+
+            <include layout="@layout/layout_theatres" />
+            <include layout="@layout/layout_comming_soon" />
+            <include layout="@layout/layout_like_us" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

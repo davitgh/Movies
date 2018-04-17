@@ -29,4 +29,8 @@
             android:background="@android:color/transparent"/>
     </LinearLayout>
 
+    <!--
+    TODO 5: Important Link of Settings https://www.androidhive.info/2017/07/android-implementing-preferences-settings-screen/
+    -->
+
 </LinearLayout>
