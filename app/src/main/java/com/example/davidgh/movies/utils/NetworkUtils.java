@@ -9,7 +9,16 @@ import android.os.Build;
 import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class NetworkUtils {
+
+    public static final String API_ALL_MULTS = "http://lxsimple.000webhostapp.com/api/mult";
 
     public static boolean isNetworkAvailable(Context context){
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -42,4 +51,51 @@ public class NetworkUtils {
                     }
                 }).show();
     }
+
+    public static String getMovieHeader(int i){
+        switch(i){
+            // {now, popular, comming soon}
+
+            case 0:
+                return "Now";
+            case 1:
+                return "Popular";
+            case 2:
+                return "Comming Soon";
+            default:
+                return "Unknown Films";
+        }
+    }
+
+    public static String getHttpData(String urlStr){
+
+        String stream = null;
+
+        try{
+            URL url = new URL(urlStr);
+            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+
+            if (httpURLConnection.getResponseCode() == 200){
+
+                BufferedReader reader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
+
+                StringBuilder stringBuilder = new StringBuilder();
+                String line;
+
+                while (null != (line = reader.readLine())){
+                    stringBuilder.append(line);
+                }
+                stream = stringBuilder.toString();
+                httpURLConnection.disconnect();
+            }
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return stream;
+    }
+
+
 }
