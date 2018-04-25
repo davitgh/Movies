@@ -41,7 +41,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_section_items"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="190dp"
         android:layout_gravity="center_vertical"
         android:orientation="horizontal" />
 

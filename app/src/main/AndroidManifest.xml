@@ -24,6 +24,7 @@
         <activity
             android:name=".NotificationsSettingsActivity"
             android:label="@string/title_activity_network_settings" />
+        <activity android:name=".activities.GenreItemActivity"></activity>
     </application>
 
 </manifest>

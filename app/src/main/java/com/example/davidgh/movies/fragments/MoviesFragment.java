@@ -69,7 +69,6 @@ public class MoviesFragment extends Fragment {
         } else {
             NetworkUtils.createAlertNoInternet(getContext());
         }
-
     }
 
     public class GetMovies extends AsyncTask<String, Void, String> {

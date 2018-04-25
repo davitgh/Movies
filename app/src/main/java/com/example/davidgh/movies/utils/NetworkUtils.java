@@ -19,6 +19,7 @@ import java.net.URL;
 public class NetworkUtils {
 
     public static final String API_ALL_MULTS = "http://lxsimple.000webhostapp.com/api/mult";
+    private static String[] genres;
 
     public static boolean isNetworkAvailable(Context context){
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -98,4 +99,17 @@ public class NetworkUtils {
     }
 
 
+    public static String[] getGenres() {
+        String [] genres = {
+                "Action & Adventure",
+                "Animation",
+                "Comedy",
+                "Documentary",
+                "Drama",
+                "Family",
+                "Horror",
+                "Music"
+        };
+        return genres;
+    }
 }

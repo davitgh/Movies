@@ -22,7 +22,7 @@
 
             <include layout="@layout/layout_theatres" />
             <include layout="@layout/layout_comming_soon" />
-            <include layout="@layout/layout_like_us" />
+            <include layout="@layout/layout_footer" />
 
         </LinearLayout>
     </ScrollView>

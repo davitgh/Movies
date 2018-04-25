@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/movie"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    tools:showIn="@layout/fragment_home">
+    android:layout_height="210dp"
+    tools:showIn="@layout/fragment_home"
+    android:paddingBottom="8dp">
 
     <VideoView
         android:id="@+id/video_trailer"

@@ -5,9 +5,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--TODO 12: create Animation for layout header-->
+    <include layout="@layout/layout_header" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_sections"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none" />
+
+    <!-- TODO 13: Add Footer-->
+    <!--
+        <include layout="@layout/layout_footer" />
+    -->
+
 </LinearLayout>
